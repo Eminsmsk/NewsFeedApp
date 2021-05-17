@@ -24,7 +24,7 @@ class FavoritesDAO {
                 cursor.getString(cursor.getColumnIndex("url")),
                 cursor.getString(cursor.getColumnIndex("content"))
             )
-            (" asıl size "+w.url)
+
             favorites.add(w)
         }
         cursor.close()

@@ -33,7 +33,6 @@ class NewsListViewModel : ViewModel() {
 
                     override fun onError(e: Throwable) {
                         e.printStackTrace()
-                        ("hata geldi")
                     }
                 })
 
@@ -55,7 +54,6 @@ class NewsListViewModel : ViewModel() {
 
                     override fun onError(e: Throwable) {
                         e.printStackTrace()
-                        ("unable to fetch data")
                     }
                 })
 

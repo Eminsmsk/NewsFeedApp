@@ -23,7 +23,6 @@ private val baseURL = "https://newsapi.org/v2/"
     fun getData(searchItem:String?, pageNumber:Int?) : Single<News>{
         mQuery = searchItem
         mPageNumber = pageNumber
-        ("-->"+mPageNumber)
         return api.searchForNews(searchItem,pageNumber)
     }
     fun getNextData() : Single<News> {
